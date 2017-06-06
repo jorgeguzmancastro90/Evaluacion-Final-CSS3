@@ -1,0 +1,161 @@
+
+body{
+  font-family: "dancing script";
+  color: white;
+  background-color: #02010a;
+}
+.contenido{
+  margin: 0 auto;
+  width: 900px;
+}
+.contenido header{
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100px;
+
+  text-shadow: 2px 2px 2px #02010a;
+}
+img {
+    -webkit-filter:drop-shadow(2px 2px #02010a);
+}
+.contenido header h1  {
+  float: left;
+  margin-left: 2%;
+  margin-top: 25px;
+}
+.contenido header nav {
+  float: right;0
+  margin-right: 2%;
+  margin-top: 10px;
+}
+nav ul li{
+  display: inline;
+  margin: 15px;
+}
+a{
+  color: white;
+}
+/* NOTE: fin de cabecera */
+
+/* NOTE: inicio imagen principal */
+.contenido #imagenprincipal{
+  width: 900px;
+  background-color: #82c3a6;
+}
+#imagenprincipal figure {
+  width: 800px;
+  margin: 0;
+}
+#imagenprincipal figure img{
+  width: 800px;
+  margin: 50px;
+}
+/* NOTE: fin de imagen principal */
+
+/* NOTE: inicio imagenessecundarias */
+.contenido #imagenessecundarias{
+  width: 900px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #d5c75f;
+  box-sizing: border-box;
+  padding: 2%;
+  text-align: center;
+}
+#imagenessecundarias img{
+  margin: 0  auto;
+  width: 100%;
+}
+#imagenessecundarias a{
+  color: black;
+}
+
+/* NOTE: fin de las imagenes secundarias */
+
+/* NOTE: inicio pie de pagina */
+.contenido footer{
+  background-color: #C6d5c5;
+  color: black;
+  margin-top: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-flow: nowrap;
+}
+.Contacto {
+  width: 100%;
+  padding-left: 20px;
+  border-bottom-left-radius: 10px;
+  box-sizing: border-box;
+}
+.Contacto h4 a{
+  color: black;
+}
+
+.terminos{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.redes{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+
+}
+.redes h1{
+  margin-bottom: 20px;
+}
+.redes li{
+  list-style: none;
+  margin-bottom: -10px;
+
+}
+img[src*="img/facebook.png"]{
+  width: 1em;
+  filter: none;
+}
+img[src*="img/twitter.png"]{
+  width: 1.2em;
+  filter: none;
+}
+img[src*="img/inst.jpg"]{
+  width: 1.2em;
+  filter: none;
+}
+.derechos{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+}
+/* NOTE: fin pie de pagina */
+
+@media (max-width: 900px) {
+  /* NOTE: cabecera inicio */
+  .contenido {width: 100%; box-sizing: border-box;}
+  .contenido header {height: 145px; line-height: 2em}
+  .contenido header h1{ text-align: center; float: none; padding: 20px 0px; }
+  .contenido header nav{ float: none; text-align: center; margin: 0 auto; margin-top: -20px; margin-right: 4%;}
+  .contenido #imagenprincipal{
+      width: 100%;
+      background-color: #82c3a6;
+      }
+      #imagenprincipal figure {
+        width: 95%;
+        margin: 0;
+      }
+      #imagenprincipal figure img{
+        width : 95%;
+        margin: 5%;
+      }
+      .contenido #imagenessecundarias{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+      }
+      .contenido footer{
+        display: flex;
+        flex-flow: column wrap;
+      }

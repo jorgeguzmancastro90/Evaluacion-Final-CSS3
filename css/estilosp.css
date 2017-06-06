@@ -1,0 +1,80 @@
+body{
+  font-family: "dancing script";
+  color: white;
+  background-color: #02010a;
+}
+.contenidop{
+  margin: 0 auto;
+  width: 900px;
+}
+.contenidop header{
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100px;
+
+  text-shadow: 2px 2px 2px #02010a;
+}
+img {
+    -webkit-filter:drop-shadow(2px 2px #02010a);
+}
+.contenidop header h1  {
+  float: left;
+  margin-left: 2%;
+  margin-top: 25px;
+
+}
+.contenidop header nav {
+  float: right;0
+  margin-right: 2%;
+  margin-top: 10px;
+
+}
+nav ul li{
+  display: inline;
+  margin: 15px;
+}
+a{
+  color: white;
+}
+/* NOTE: fin estilos cabecera */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+  /* NOTE: cabecera inicio */
+  .contenidop {width: 100%; box-sizing: border-box;}
+  .contenidop header {height: 145px; line-height: 2em}
+  .contenidop header h1{ text-align: center; float: none; padding: 20px 0px; }
+  .contenidop header nav{ float: none; text-align: center; margin: 0 auto; margin-top: -20px; margin-right: 4%;}
+  /* NOTE: cabecera final */

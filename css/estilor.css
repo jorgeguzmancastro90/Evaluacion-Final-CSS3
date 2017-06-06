@@ -1,0 +1,151 @@
+body{
+  font-family: "dancing script";
+  color: white;
+  background-color: #02010a;
+}
+.contenidor{
+  margin: 0 auto;
+  width: 900px;
+}
+.contenidor header{
+  background-color: #5b7989;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  height: 100px;
+
+  text-shadow: 2px 2px 2px #02010a;
+}
+img {
+    -webkit-filter:drop-shadow(2px 2px #02010a);
+}
+.contenidor header h1  {
+  float: left;
+  margin-left: 2%;
+  margin-top: 25px;
+
+}
+.contenidor header nav {
+  float: right;0
+  margin-right: 2%;
+  margin-top: 10px;
+
+}
+nav ul li{
+  display: inline;
+  margin: 15px;
+}
+a{
+  color: white;
+}
+/* NOTE: fin estilos de cabezote */
+
+/* NOTE: inicio estilos de galeria */
+.contenidor #galeria{
+  width: 900px;
+  display: flex;
+  flex-flow:  wrap;
+  background-color: #d5c75f;
+  box-sizing: border-box;
+}
+#galeria figure{
+  width: 260px;
+  margin: 20px;
+}
+#galeria img{
+  width: 100%
+}
+#galeria [src*="../img/retrato3.jpg"]{
+  -webkit-filter: blur(10px);
+  filter:blur(10px);
+}
+#galeria figure:nth-child(even){
+  -webkit-filter: grayscale(100%);
+  filter:grayscale(100%);
+}
+#galeria figure:nth-child(3){
+  -webkit-filter: sepia(90%);
+  filter:sepia(90%);
+}
+
+/* NOTE: fin estilos de galeria */
+
+/* NOTE: inicio estilos de pie de pagina */
+.contenidor footer{
+  background-color: #C6d5c5;
+  color: black;
+  margin-top: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  flex-flow: nowrap;
+}
+.Contactor {
+  width: 100%;
+  padding-left: 20px;
+  border-bottom-left-radius: 10px;
+  box-sizing: border-box;
+}
+.Contactor h4 a{
+  color: black;
+}
+
+.terminosr{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.redesr{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+
+}
+.redesr h1{
+  margin-bottom: 20px;
+}
+.redesr li{
+  list-style: none;
+  margin-bottom: -10px;
+
+}
+img[src*="../img/facebook.png"]{
+  width: 1em;
+  filter: none;
+}
+img[src*="../img/twitter.png"]{
+  width: 1.2em;
+  filter: none;
+}
+img[src*="../img/inst.jpg"]{
+  width: 1.2em;
+  filter: none;
+}
+.derechosr{
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+}
+/* NOTE: fin de estilos pie de pagina*/
+
+/* NOTE: INICIO VERSION MOVIL */
+@media (max-width: 900px) {
+
+  /* NOTE: inicio cabecera MOVIL*/
+  .contenidor {width: 100%; box-sizing: border-box;}
+  .contenidor header {height: 145px; line-height: 2em}
+  .contenidor header h1{ text-align: center; float: none; padding: 20px 0px; }
+  .contenidor header nav{ float: none; text-align: center; margin: 0 auto; margin-top: -20px; margin-right: 4%;}
+/* NOTE: cabecera final MOVIL */
+
+/* NOTE: inicio galeria MOVIL */
+  .contenidor #galeria{width: 100%; flex-flow: column;}
+  .contenidor #galeria figure {width: 90%; margin: 0 auto;}
+  .contenidor img{margin-top: 30px;}
+  /* NOTE: Final galeria MOVIL */
+
+  /* NOTE: inicio pie de pagina MOVIL */
+  .contenidor footer{
+    display: flex;
+    flex-flow: column wrap;
+  }
